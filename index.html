@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our website</h1>
+        <p>Stay update with our latest news and update</p>
+    </div>
+
+    <div onclick="closeModal()" id="overlay" class="overlay">
+        <div onclick="stopClose(event)" class="modal">
+            <button onclick="closeModal()"  class="close-btn" >x</button>
+            <h2>Join our Newsletter</h2>
+            <p>Subscribe to the latest update</p>
+
+            <form onsubmit="subscribe(event)">
+                <input id="email" class="email" type="email" placeholder="Enter your email" />
+                <p class="error-message" id="errorMessage"></p>
+                <button type="submit" class="sub-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
